@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Signal Type</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/helvetica-world">
+<link rel="stylesheet" href="https://fonts.cdnfonts.com/css/neue-haas-grotesk-display-pro">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Poppins:wght@400;700;800&family=Roboto:wght@400;700&family=Josefin+Sans:wght@400;700&family=Raleway:wght@400;700;800&family=Playfair+Display:wght@400;700;800&family=Libre+Baskerville:wght@400;700&family=Lato:wght@400;700&family=DM+Sans:wght@400;700&family=Open+Sans:wght@400;700&family=Inter:wght@400;700;800&family=Space+Mono:wght@400;700&family=Syne:wght@400;700;800&display=swap">
+</head>
+
+<body>
+
+<!-- NAV -->
+<div class="nav">
+  <div class="nav-left">
+    <span data-tab="home" class="active">HOME</span>
+    <span data-tab="system">SYSTEM</span>
+    <span data-tab="examples">ARCHIVE</span>
+  </div>
+  <div class="nav-right">
+    <img src="logo.png" alt="Signal Type" class="brand-logo" data-tab="home" />
+  </div>
+</div>
+
+<div class="nav-rule"></div>
+
+<!-- ========== HOME PAGE ========== -->
+<div class="page page-home active" id="page-home">
+  <div class="home-stage">
+    <svg class="blob-svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+      <path id="blobPath" d="" fill="#111"></path>
+    </svg>
+    <div class="home-title">Signal<br>Type.</div>
+    <a href="#" class="enter-system" data-tab="system">ENTER<br>SYSTEM&nbsp;&rarr;</a>
+  </div>
+  <div class="home-tagline">
+    TYPOGRAPHY<br>
+    AS BEHAVIOR.<br>
+    NOT STATIC FORM.
+  </div>
+</div>
+
+<!-- ========== SYSTEM PAGE ========== -->
+<div class="page page-system" id="page-system">
+
+<!-- INPUT ROW -->
+<div class="top-row">
+  <div class="input-group">
+    <span class="input-label">text</span>
+    <input 
+  id="textInput" 
+  type="text" 
+  placeholder="enter text..." 
+  autocomplete="off"
+  autocorrect="off"
+  autocapitalize="off"
+  spellcheck="false"
+/>
+  </div>
+  <div class="input-group typeface-group">
+    <span class="input-label">typeface</span>
+    <select id="typeface" class="native-typeface-select">
+      <option value="'Neue Haas Grotesk Display Pro', 'Helvetica World', Helvetica, sans-serif">Neue Haas Grotesk Display Pro</option>
+      <option value="'Times New Roman', serif">Times New Roman</option>
+      <option value="Georgia, serif">Georgia</option>
+      <option value="'Courier New', monospace">Courier New</option>
+      <option value="'Montserrat', sans-serif">Montserrat</option>
+      <option value="'Poppins', sans-serif">Poppins</option>
+      <option value="'Roboto', sans-serif">Roboto</option>
+      <option value="'Josefin Sans', sans-serif">Josefin Sans</option>
+      <option value="'Raleway', sans-serif">Raleway</option>
+      <option value="'Playfair Display', serif">Playfair Display</option>
+      <option value="'Libre Baskerville', serif">Libre Baskerville</option>
+      <option value="'Lato', sans-serif">Lato</option>
+      <option value="'DM Sans', sans-serif">DM Sans</option>
+      <option value="'Open Sans', sans-serif">Open Sans</option>
+      <option value="'Inter', sans-serif">Inter</option>
+      <option value="'Space Mono', monospace">Space Mono</option>
+      <option value="'Syne', sans-serif">Syne</option>
+    </select>
+    <div class="typeface-dropdown" id="typefaceDropdown">
+      <button class="typeface-selected" id="typefaceSelected" type="button">
+        <span style="font-family:'Neue Haas Grotesk Display Pro','Helvetica World',Helvetica,sans-serif;">Neue Haas Grotesk Display Pro</span>
+      </button>
+      <div class="typeface-menu" id="typefaceMenu">
+        <button type="button" class="typeface-option" data-value="'Neue Haas Grotesk Display Pro', 'Helvetica World', Helvetica, sans-serif" style="font-family:'Neue Haas Grotesk Display Pro','Helvetica World',Helvetica,sans-serif;">Neue Haas Grotesk Display Pro</button>
+        <button type="button" class="typeface-option" data-value="'Times New Roman', serif" style="font-family:'Times New Roman',serif;">Times New Roman</button>
+        <button type="button" class="typeface-option" data-value="Georgia, serif" style="font-family:Georgia,serif;">Georgia</button>
+        <button type="button" class="typeface-option" data-value="'Courier New', monospace" style="font-family:'Courier New',monospace;">Courier New</button>
+        <button type="button" class="typeface-option" data-value="'Montserrat', sans-serif" style="font-family:'Montserrat',sans-serif;">Montserrat</button>
+        <button type="button" class="typeface-option" data-value="'Poppins', sans-serif" style="font-family:'Poppins',sans-serif;">Poppins</button>
+        <button type="button" class="typeface-option" data-value="'Roboto', sans-serif" style="font-family:'Roboto',sans-serif;">Roboto</button>
+        <button type="button" class="typeface-option" data-value="'Josefin Sans', sans-serif" style="font-family:'Josefin Sans',sans-serif;">Josefin Sans</button>
+        <button type="button" class="typeface-option" data-value="'Raleway', sans-serif" style="font-family:'Raleway',sans-serif;">Raleway</button>
+        <button type="button" class="typeface-option" data-value="'Playfair Display', serif" style="font-family:'Playfair Display',serif;">Playfair Display</button>
+        <button type="button" class="typeface-option" data-value="'Libre Baskerville', serif" style="font-family:'Libre Baskerville',serif;">Libre Baskerville</button>
+        <button type="button" class="typeface-option" data-value="'Lato', sans-serif" style="font-family:'Lato',sans-serif;">Lato</button>
+        <button type="button" class="typeface-option" data-value="'DM Sans', sans-serif" style="font-family:'DM Sans',sans-serif;">DM Sans</button>
+        <button type="button" class="typeface-option" data-value="'Open Sans', sans-serif" style="font-family:'Open Sans',sans-serif;">Open Sans</button>
+        <button type="button" class="typeface-option" data-value="'Inter', sans-serif" style="font-family:'Inter',sans-serif;">Inter</button>
+        <button type="button" class="typeface-option" data-value="'Space Mono', monospace" style="font-family:'Space Mono',monospace;">Space Mono</button>
+        <button type="button" class="typeface-option" data-value="'Syne', sans-serif" style="font-family:'Syne',sans-serif;">Syne</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- FONT WEIGHT SELECTOR -->
+  <div class="input-group weight-group">
+    <span class="input-label">weight</span>
+    <div class="weight-selector" id="weightSelector">
+      <button class="weight-btn active" data-weight="400" type="button">
+        <span class="weight-aa" style="font-weight:400;">Aa</span>
+        <span class="weight-label">Regular</span>
+      </button>
+      <button class="weight-btn" data-weight="800" type="button">
+        <span class="weight-aa" style="font-weight:800;">Aa</span>
+        <span class="weight-label">Bold</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- CONTROLS GRID -->
+<div class="section-grid">
+
+  <!-- 01 DISTORTION -->
+  <div class="section">
+    <div class="section-title">
+      <span class="section-num">01</span>
+      <span class="chevron">&#8964;</span>
+      <span class="section-name">DISTORTION</span>
+    </div>
+    <div class="section-options">
+      <div class="effect-row">
+        <span class="option-name">WAVE DISPLACEMENT</span>
+        <div class="slider-wrap option-slider">
+          <div class="slider-track"></div>
+          <div class="slider-fill" id="distortionFill_wave"></div>
+          <input type="range" id="distortion_wave" class="slider" min="0" max="100" value="0">
+        </div>
+      </div>
+      <div class="effect-row">
+        <span class="option-name">CHROMATIC DISTORTION</span>
+        <div class="slider-wrap option-slider">
+          <div class="slider-track"></div>
+          <div class="slider-fill" id="distortionFill_chromatic"></div>
+          <input type="range" id="distortion_chromatic" class="slider" min="0" max="100" value="0">
+        </div>
+      </div>
+      <div class="effect-row">
+        <span class="option-name">FLUID DISTORTION</span>
+        <div class="slider-wrap option-slider">
+          <div class="slider-track"></div>
+          <div class="slider-fill" id="distortionFill_fluid"></div>
+          <input type="range" id="distortion_fluid" class="slider" min="0" max="100" value="0">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 03 DEGRADATION -->
+  <div class="section">
+    <div class="section-title">
+      <span class="section-num">03</span>
+      <span class="chevron">&#8964;</span>
+      <span class="section-name">DEGRADATION</span>
+    </div>
+    <div class="section-options">
+      <div class="effect-row">
+        <span class="option-name">MOTION SMEAR</span>
+        <div class="slider-wrap option-slider">
+          <div class="slider-track"></div>
+          <div class="slider-fill" id="degradationFill_smear"></div>
+          <input type="range" id="degradation_smear" class="slider" min="0" max="100" value="0">
+        </div>
+      </div>
+      <div class="effect-row">
+        <span class="option-name">GAUSSIAN BLUR</span>
+        <div class="slider-wrap option-slider">
+          <div class="slider-track"></div>
+          <div class="slider-fill" id="degradationFill_gaussian"></div>
+          <input type="range" id="degradation_gaussian" class="slider" min="0" max="100" value="0">
+        </div>
+      </div>
+      <div class="effect-row">
+        <span class="option-name">ZOOM BLUR</span>
+        <div class="slider-wrap option-slider">
+          <div class="slider-track"></div>
+          <div class="slider-fill" id="degradationFill_zoom"></div>
+          <input type="range" id="degradation_zoom" class="slider" min="0" max="100" value="0">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 02 INSTABILITY -->
+  <div class="section">
+    <div class="section-title">
+      <span class="section-num">02</span>
+      <span class="chevron">&#8964;</span>
+      <span class="section-name">INSTABILITY</span>
+    </div>
+    <div class="section-options">
+      <div class="effect-row">
+        <span class="option-name">ECHO SHIFT</span>
+        <div class="slider-wrap option-slider">
+          <div class="slider-track"></div>
+          <div class="slider-fill" id="instabilityFill_echo"></div>
+          <input type="range" id="instability_echo" class="slider" min="0" max="100" value="0">
+        </div>
+      </div>
+      <div class="effect-row">
+        <span class="option-name">WIREFRAME OFFSET</span>
+        <div class="slider-wrap option-slider">
+          <div class="slider-track"></div>
+          <div class="slider-fill" id="instabilityFill_wireframe"></div>
+          <input type="range" id="instability_wireframe" class="slider" min="0" max="100" value="0">
+        </div>
+      </div>
+      <div class="effect-row">
+        <span class="option-name">HORIZONTAL DRIFT</span>
+        <div class="slider-wrap option-slider">
+          <div class="slider-track"></div>
+          <div class="slider-fill" id="instabilityFill_drift"></div>
+          <input type="range" id="instability_drift" class="slider" min="0" max="100" value="0">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 04 BREAKDOWN -->
+  <div class="section">
+    <div class="section-title">
+      <span class="section-num">04</span>
+      <span class="chevron">&#8964;</span>
+      <span class="section-name">BREAKDOWN</span>
+    </div>
+    <div class="section-options">
+      <div class="effect-row">
+        <span class="option-name">FRAGMENTATION</span>
+        <div class="slider-wrap option-slider">
+          <div class="slider-track"></div>
+          <div class="slider-fill" id="breakdownFill_fragmentation"></div>
+          <input type="range" id="breakdown_fragmentation" class="slider" min="0" max="100" value="0">
+        </div>
+      </div>
+      <div class="effect-row">
+        <span class="option-name">DENSITY COLLAPSE</span>
+        <div class="slider-wrap option-slider">
+          <div class="slider-track"></div>
+          <div class="slider-fill" id="breakdownFill_density"></div>
+          <input type="range" id="breakdown_density" class="slider" min="0" max="100" value="0">
+        </div>
+      </div>
+      <div class="effect-row">
+        <span class="option-name">NOISE DISPLACEMENT</span>
+        <div class="slider-wrap option-slider">
+          <div class="slider-track"></div>
+          <div class="slider-fill" id="breakdownFill_noise"></div>
+          <input type="range" id="breakdown_noise" class="slider" min="0" max="100" value="0">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- end section-grid -->
+
+<!-- OUTPUT -->
+<div class="output-box" id="outputBox">
+  <canvas id="effectCanvas" class="effect-canvas"></canvas>
+  <canvas id="degradationCanvas" class="effect-canvas" style="display:none;z-index:5;"></canvas>
+  <canvas id="breakdownCanvas" class="effect-canvas" style="display:none;z-index:6;"></canvas>
+  <canvas id="chromaticCanvas" class="effect-canvas" style="display:none;z-index:7;"></canvas>
+  <div id="output">reality</div>
+  <div id="instabilityLayer"></div>
+  <div class="chromatic-layer" id="chromaticLayer">
+    <span id="chromatic-r"></span>
+    <span id="chromatic-b"></span>
+    <div class="grain"></div>
+  </div>
+</div>
+
+<!-- EXPORT BUTTONS + ARCHIVE -->
+<div class="export-buttons">
+  <button id="resetBtn">RESET</button>
+  <button id="saveSvgBtn">EXPORT PNG</button>
+  <button id="saveGifBtn">EXPORT VIDEO</button>
+</div>
+<div class="archive-submit">
+  <input type="text" id="signalTitle" placeholder="title your signal…" />
+  <input type="text" id="signalAuthor" placeholder="your name (optional)" />
+  <button id="addToArchiveBtn">ADD TO ARCHIVE</button>
+</div>
+<div class="archive-saved-toast" id="archiveSavedToast" style="display:none;">
+  <span id="toastMsg">Saved to archive.</span>
+  <button id="viewArchiveBtn">VIEW IN ARCHIVE →</button>
+</div>
+
+</div><!-- /page-system -->
+
+<!-- ========== ARCHIVE PAGE ========== -->
+<div class="page page-examples" id="page-examples">
+  <div class="archive-header">
+    <h1 class="archive-title">SHARED SIGNALS.</h1>
+    <p class="archive-desc">A living archive of typographic outputs generated through Signal Type. Save your signal, share your output, and download forms created by others. Create a signal in the System tab, title it, then add it to the archive. </p>
+    <p class="archive-instruction"></p>
+  </div>
+  <div class="archive-grid" id="archiveGrid">
+    <!-- cards injected by JS -->
+  </div>
+  <div class="archive-empty" id="archiveEmpty">
+    <p>NO SIGNALS SAVED YET.</p>
+    <p class="archive-empty-sub"> → Create an output in the System tab and add it to the archive.</p>
+  </div>
+</div><!-- /page-examples -->
+
+<!-- ========== PAGE TABS + BLOB ========== -->
+<script>
+(function(){
+  const tabs = document.querySelectorAll('[data-tab]');
+  const pages = {
+    home:     document.getElementById('page-home'),
+    system:   document.getElementById('page-system'),
+    examples: document.getElementById('page-examples')
+  };
+  const navTabs = document.querySelectorAll('.nav-left [data-tab]');
+
+  function setTab(name){
+    if (!pages[name]) return;
+    Object.keys(pages).forEach(k => pages[k].classList.toggle('active', k === name));
+    navTabs.forEach(el => el.classList.toggle('active', el.dataset.tab === name));
+    document.body.dataset.page = name;
+    window.scrollTo({top:0, behavior:'instant'});
+    // When switching TO system, nudge WebGL + sliders to recompute dimensions
+    // (they may have booted with display:none -> 0 width).
+    if (name === 'system') {
+      requestAnimationFrame(() => {
+        window.dispatchEvent(new Event('resize'));
+      });
+    }
+  }
+
+  tabs.forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      setTab(el.dataset.tab);
+    });
+  });
+
+  // default
+  setTab('home');
+
+  // ── Morphing blob ──
+  // Harmonic decomposition: the silhouette is a sum of angular cosines
+  // (modes 1..4).  Amplitudes + phases drift slowly so the shape
+  // breathes through circle / oval / rounded-rectangle / asymmetric
+  // lobe states — matching the reference GIF.
+  const path = document.getElementById('blobPath');
+  if (path) {
+    const CX = 800, CY = 500;      // viewBox center (1600x1000)
+    const BASE_R = 430;            // blob is large — extends off-frame at widest
+    const POINTS = 96;             // lots of samples → buttery-smooth outline
+
+    function buildPath(t){
+      // Mode amplitudes, each drifting on its own period.
+      // All stay small enough that the shape never self-intersects.
+      const a1 = 0.22 + 0.18 * Math.sin(t * 0.19);              // ellipse (wide ↔ tall)
+      const a2 = 0.09 + 0.07 * Math.sin(t * 0.13 + 1.1);        // peanut / rounded-rect
+      const a3 = 0.06 + 0.05 * Math.sin(t * 0.11 + 2.4);        // tri-lobe asymmetry
+      const a4 = 0.035 + 0.025 * Math.sin(t * 0.09 + 0.6);      // fine asymmetry
+
+      // Phases drift — ellipse axis slowly rotates, lobes wander.
+      const p1 = t * 0.07;
+      const p2 = t * 0.05 + 0.8;
+      const p3 = t * 0.06 + 2.1;
+      const p4 = t * 0.04 + 1.5;
+
+      // Overall breathing
+      const scale = 1 + 0.05 * Math.sin(t * 0.08);
+
+      const pts = [];
+      for (let i = 0; i < POINTS; i++) {
+        const theta = (i / POINTS) * Math.PI * 2;
+        const r = BASE_R * scale * (
+          1
+          + a1 * Math.cos(theta - p1)
+          + a2 * Math.cos(2 * theta - p2)
+          + a3 * Math.cos(3 * theta - p3)
+          + a4 * Math.cos(4 * theta - p4)
+        );
+        pts.push([CX + Math.cos(theta) * r, CY + Math.sin(theta) * r]);
+      }
+
+      // Catmull-Rom → cubic bezier, closed. Tension 1/6.
+      let d = '';
+      for (let i = 0; i < POINTS; i++) {
+        const p0 = pts[(i - 1 + POINTS) % POINTS];
+        const p1p = pts[i];
+        const p2p = pts[(i + 1) % POINTS];
+        const p3p = pts[(i + 2) % POINTS];
+        if (i === 0) d += `M${p1p[0].toFixed(1)},${p1p[1].toFixed(1)}`;
+        const c1x = p1p[0] + (p2p[0] - p0[0]) / 6;
+        const c1y = p1p[1] + (p2p[1] - p0[1]) / 6;
+        const c2x = p2p[0] - (p3p[0] - p1p[0]) / 6;
+        const c2y = p2p[1] - (p3p[1] - p1p[1]) / 6;
+        d += ` C${c1x.toFixed(1)},${c1y.toFixed(1)} ${c2x.toFixed(1)},${c2y.toFixed(1)} ${p2p[0].toFixed(1)},${p2p[1].toFixed(1)}`;
+      }
+      d += ' Z';
+      return d;
+    }
+
+    const start = performance.now();
+    function tick(now){
+      const t = (now - start) * 0.001;
+      path.setAttribute('d', buildPath(t));
+      requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  }
+})();
+</script>
+
+<!-- ========== VIDEO PREVIEW MODAL ========== -->
+<div id="videoPreviewModal" style="display:none;">
+  <div class="video-modal-backdrop" id="videoModalBackdrop"></div>
+  <div class="video-modal-box">
+    <div class="video-modal-header">
+      <span class="video-modal-title">PREVIEW</span>
+      <button class="video-modal-close-btn" id="videoModalClose">✕</button>
+    </div>
+    <div class="video-modal-screen">
+      <video id="videoPreviewEl" muted playsinline></video>
+    </div>
+    <div class="video-modal-footer">
+      <p class="video-modal-note">Transparent WebM — place over any background in your editor.</p>
+      <button id="videoDownloadBtn">DOWNLOAD VIDEO</button>
+    </div>
+  </div>
+</div>
+
+<script type="module" src="script.js"></script>
+
+
+<script>
+// Clear video data from archive entries to free localStorage space
+// Videos are too large to store — only PNGs are kept
+(function() {
+  try {
+    const raw = localStorage.getItem('signalArchive');
+    if (!raw) return;
+    const entries = JSON.parse(raw);
+    let changed = false;
+    entries.forEach(e => {
+      if (e.videoDataUrl) { delete e.videoDataUrl; changed = true; }
+    });
+    if (changed) localStorage.setItem('signalArchive', JSON.stringify(entries));
+  } catch(e) {}
+})();
+</script>
+</body>
+</html>
